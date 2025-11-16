@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashish - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Kashish's Portfolio</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#learnings" class="nav__link">Key Learnings</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="assests/profile-pic.jpg" alt="Kashish" class="home__profile-pic">
+                
+                <div class="home__content">
+                    <h1>Hi, I'm <span class="highlight">Kashish</span></h1>
+                    <h3>B.Tech CSE Student</h3>
+                    <p>
+                        I'm a B.Tech student at Graphic Era Hill University with a strong passion for coding and software development. This portfolio documents my technical skills, my journey so far, and the practical lessons I've learned from my PESE 300 course.
+                    </p>
+                    <div class="home__socials">
+                        <a href="https://www.linkedin.com/in/kashish-sharma-0b50532bb/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="mailto:kashishhhsharma0223@gmail.com"><i class="ri-mail-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My educational journey</span>
+
+            <div class="about__container container grid">
+                <div class="education__card">
+                    <div class="education__header">
+                        <i class="ri-graduation-cap-line"></i>
+                        <div>
+                            <h3>Bachelor of Technology (B.Tech)</h3>
+                            <span class="highlight">Computer Science Engineering (CORE)</span>
+                        </div>
+                    </div>
+                    <p><strong>Institution:</strong> Graphic Era Hill University, Dehradun</p>
+                    <p><strong>Year:</strong> 2024 - 2028 (Currently in 3rd Semester)</p>
+                </div>
+
+                <div class="education__card">
+                    <div class="education__header">
+                        <i class="ri-book-line"></i>
+                        <div>
+                            <h3>Higher Secondary (12th)</h3>
+                            <span class="highlight">Science (PCM)</span>
+                        </div>
+                    </div>
+                    <p><strong>Institution:</strong> Scholars Academy Roorkee</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <p><strong>Grade:</strong> Percentage: 91%</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical expertise and soft skills</span>
+
+            <div class="skills__container container grid">
+                <div class="skills__card">
+                    <h3><i class="ri-code-s-slash-line"></i> Technical Skills</h3>
+                    <div class="skills__tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JAVASCRIPT</span>
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>GIT & GITHUB</span>
+                    </div>
+                </div>
+
+                <div class="skills__card">
+                    <h3><i class="ri-user-heart-line"></i> Soft Skills</h3>
+                    <div class="skills__tags">
+                        <span>Problem Solving</span>
+                        <span>Teamwork & Collaboration</span>
+                        <span>Adaptability</span>
+                        <span>Verbal & Written Communication</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="learnings">
+            <h2 class="section__title">Key Learnings</h2>
+            <span class="section__subtitle">From my Personality Development (PESE 300) Course</span>
+
+            <div class="learnings__container container">
+
+                <div class="learning__swoc-grid">
+                    
+                    <div class="learning__video-container">
+                        <video class="video__player" id="video-player" src="assests/Swoc video.mp4" poster="video-poster.jpg"></video>
+                        <div class="video__controls">
+                            <button id="play-pause-btn"><i class="ri-play-fill"></i></button>
+                            <button id="rewind-btn"><i class="ri-rewind-5-line"></i></button>
+                            <input type="range" id="seek-bar" value="0" min="0">
+                            <button id="forward-btn"><i class="ri-speed-up-line"></i></button>
+                            <div class="volume__controls">
+                                <button id="mute-btn"><i class="ri-volume-up-line"></i></button>
+                                <input type="range" id="volume-bar" value="1" min="0" max="1" step="0.1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="learning__content">
+                        <div class="learning__header">
+                            <i class="ri-search-eye-line"></i>
+                            <h3>UNIT 1: SWOC Analysis</h3>
+                        </div>
+                        <p>
+                            This unit was a practical audit of my own skills. I learned to pinpoint my strong suits (like adaptability) and identify areas I need to improve (like time management). The real takeaway was learning how to use these strengths to grab new opportunities and create a plan to tackle my challenges.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="learning__card">
+                    <div class="learning__header">
+                        <i class="ri-user-voice-line"></i>
+                        <h3>UNIT 2: Self Introduction</h3>
+                    </div>
+                    <p>
+                        This unit taught me to summarize my skills, goals, and passion into a clear and confident short length introduction, ensuring I make a strong and memorable first impression in any professional setting.
+                    </p>
+                </div>
+
+                <div class="learning__card">
+                    <div class="learning__header">
+                        <i class="ri-presentation-line"></i>
+                        <h3>UNIT 3: Presentation Skills</h3>
+                    </div>
+                    <p>
+                        This unit broke down the art of storytelling. I learned that a good presentation isn't just about the slides; it's about structuring a narrative. I practiced how to build a clear (Introduction, Body, Conclusion) flow and use visual aids (like graphs and images) to support my message, not replace it.
+                    </p>
+                </div>
+
+                <div class="learning__card">
+                    <div class="learning__header">
+                        <i class="ri-mic-line"></i>
+                        <h3>UNIT 4: Public Speaking</h3>
+                    </div>
+                    <p>
+                        Through practical exercises like JAM (Just-a-Minute) sessions and extempore, I directly confronted stage fright. This unit gave me techniques to manage anxiety, organize my thoughts quickly under pressure, and speak clearly without relying on filler words (like 'um' or 'ah').
+                    </css>
+                </div>
+
+                <div class="learning__card">
+                    <div class="learning__header">
+                        <i class="ri-chat-smile-2-line"></i>
+                        <h3>UNIT 5: Art of Conversation</h3>
+                    </div>
+                    <p>
+                        This final unit taught me that communication is a two-way street. The biggest lesson was in 'active listening'—learning to genuinely hear and understand the other person's perspective, not just waiting for my turn to talk. I also learned how body language and non-verbal cues build trust and rapport.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Kashish. Made for PESE 300.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
